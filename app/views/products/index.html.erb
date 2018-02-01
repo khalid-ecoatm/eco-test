@@ -1,0 +1,33 @@
+<style>
+body {
+    font-family: Verdana
+}
+table {
+  table-layout: fixed;
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  border-spacing: 0px;
+}
+
+td, th {
+  border: 1px solid gray;
+}
+</style>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>SKU</th>
+        <th>Category</th>
+        <th>Price</th>
+    </tr>
+    <% @products.each do |product| %>
+        <tr>
+            <td><%= product.name %></td>
+            <td><%= product.sku %></td>
+            <td><%= product.category.name %></td>
+            <td><%= number_to_currency product.price %></td>
+        </tr>
+    <% end %>
+</table.

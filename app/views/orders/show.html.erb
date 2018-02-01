@@ -1,0 +1,21 @@
+<style>
+body {
+    font-family: Verdana
+}
+</style>
+<h1>Order <%= @order.id %></h1>
+
+<table>
+    <tr>
+        <td>Name</td>
+        <td><%= @order.product.name %></td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td><%= @order.quantity %></td>
+    </tr>
+    <tr>
+        <td>Total Price</td>
+        <td><%= number_to_currency @order.product.price * @order.quantity %></td>
+    </tr>
+</table>

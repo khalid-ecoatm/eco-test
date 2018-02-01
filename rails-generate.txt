@@ -1,0 +1,18 @@
+products [iphone x, ipad pro, google pixel]
+- name
+- sku
+- category_id
+- price
+rails g model product name:string sku:string category_id:integer price:float
+
+categories [cell phones, tablets]
+- name
+rails g model category name
+
+orders
+- product_id
+- quantity
+rails g model order product_id:integer quantity:integer
+
+rails g controller products
+rails g controller orders

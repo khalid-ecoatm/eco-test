@@ -1,0 +1,31 @@
+<style>
+body {
+    font-family: Verdana
+}
+table {
+  table-layout: fixed;
+  width: 50%;
+  padding: 0px;
+  margin: 0px;
+  border-spacing: 0px;
+}
+
+td, th {
+  border: 1px solid gray;
+}
+</style>
+
+<table>
+    <tr>
+        <th>Product</th>
+        <th>Quantity</th>
+        <th>Total Price</th>
+    </tr>
+    <% @orders.each do |order| %>
+        <tr>
+            <td><%= link_to order.product.name, order_path(order.id) %></td>
+            <td><%= order.quantity %></td>
+            <td><%= number_to_currency order.product.price * order.quantity %></td>
+        </tr>
+    <% end %>
+</table.
