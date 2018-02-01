@@ -41,22 +41,22 @@ SKUs are restricted to alphanumeric (a-z, 0-9) characters.
 Run `bundle exec rake db:create db:migrate db:seed` to create your sqlite db
 
 2.
-Navigate to http://localhost:3000/products to see the list of products
+    Navigate to http://localhost:3000/products to see the list of products
 
-For filtered by category
-http://localhost:3000/products?category_name=cell%20phones
-or
-http://localhost:3000/products?category_name=tablets
+    For filtered by category
+    http://localhost:3000/products?category_name=cell%20phones
+    or
+    http://localhost:3000/products?category_name=tablets
 
-For ordered by name, sku or price explicit descending
-http://localhost:3000/products?order=name&desc=1
-http://localhost:3000/products?order=sku&desc=1
-http://localhost:3000/products?order=price&desc=1
+    For ordered by name, sku or price explicit descending
+    http://localhost:3000/products?order=name&desc=1
+    http://localhost:3000/products?order=sku&desc=1
+    http://localhost:3000/products?order=price&desc=1
 
-For ordered by name, sku or price explicit ascending (default)
-http://localhost:3000/products?order=name&asc=1
-http://localhost:3000/products?order=sku&asc=1
-http://localhost:3000/products?order=price&asc=1
+    For ordered by name, sku or price explicit ascending (default)
+    http://localhost:3000/products?order=name&asc=1
+    http://localhost:3000/products?order=sku&asc=1
+    http://localhost:3000/products?order=price&asc=1
 
 3.
-Navigate to http://localhost:3000/orders to see the list of orders.  Click on any of the order names to see the detail page with the name, quantity and total price.
+    Navigate to http://localhost:3000/orders to see the list of orders.  Click on any of the order names to see the detail page with the name, quantity and total price.
