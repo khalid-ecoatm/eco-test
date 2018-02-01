@@ -37,7 +37,9 @@ SKUs are restricted to alphanumeric (a-z, 0-9) characters.
 
 ### How to Use
 
-1. ActiveRecord seed data is populated in seeds.rb
+1. 
+    ActiveRecord seed data is populated in seeds.rb
+    
     Run `bundle exec rake db:create db:migrate db:seed` to create your sqlite db
 
 2.
