@@ -2,8 +2,10 @@ class ProductsController < ApplicationController
 
     def index
         order = params[:order]
-        order = order + " desc" if(params[:desc])
-        order = order + " asc" if(params[:asc])
+        # order = order + " desc" if(params[:desc])
+        # order = order + " asc" if(params[:asc])
+
+        
 
         p order
         
@@ -12,6 +14,7 @@ class ProductsController < ApplicationController
         else
             @products = Product.all
         end
-        @products = @products.order(order)
+        @products = @products.reverse_order if params[:desc]
+        # @products = @products.order(order)
     end
 end

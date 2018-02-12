@@ -1,3 +1,3 @@
 class Category < ApplicationRecord
-    has_one :category
+    has_many :product
 end

@@ -16,3 +16,6 @@ rails g model order product_id:integer quantity:integer
 
 rails g controller products
 rails g controller orders
+
+
+iphone x, with a tablet.
